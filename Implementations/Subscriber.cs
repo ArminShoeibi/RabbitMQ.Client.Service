@@ -36,9 +36,7 @@ namespace RabbitMQ.Client.Service.Implementations
                 var message = Encoding.UTF8.GetString(messageBody);
             };
 
-            amqpChannel.BasicConsume(queueOptions.Name, autoAck, consumer);
-                
-
+           amqpChannel.BasicConsume(queueOptions.Name, autoAck, consumer);
         }
 
     }

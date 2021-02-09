@@ -4,6 +4,6 @@ namespace RabbitMQ.Client.Service.Interfaces
 {
     public interface ISubscriber
     {
-        public string Subscribe(ExchangeOptions exchangeOptions, QueueOptions queueOptions,ConsumeOptions consumeOptions);
+        public void Subscribe(ExchangeOptions exchangeOptions, QueueOptions queueOptions, bool autoAck);
     }
 }
