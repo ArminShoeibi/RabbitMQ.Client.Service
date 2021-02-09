@@ -26,7 +26,7 @@ namespace RabbitMQ.Client.Service.Implementations
         public IModel GetAMQPChannel()
         {
             _amqpChannel = _amqpConnection.CreateModel();
-        
+            _amqpChannel.BasicConsume()
             return _amqpChannel;
         }
 
